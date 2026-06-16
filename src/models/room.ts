@@ -1,1 +1,1 @@
-import { RoomStatus } from '../constants/room'; import type { Player } from './player'; export interface Room { id:string; name:string; max_players:number; status:RoomStatus; map_size:{width:number;height:number}; players:Player[]; created_at:string }
+import { RoomStatus } from '../constants/room'; import type { Player } from './player'; export interface Room { id:string; name:string; max_players:number; status:RoomStatus; host_id:string; map_size:{width:number;height:number}; players:Player[]; created_at:string }
